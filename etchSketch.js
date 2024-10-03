@@ -1,9 +1,13 @@
 const container = document.querySelector("#container");
-let side = 100;
+let side = 16;
 let fill = side * side;
+let btn = document.querySelector("#btn")
+let dimension = 0
 
+function populateDivs(side) {
+  fill = side * side;
 for (i = 1; i <= fill; i++) {
-  let dimension = 600 / side - 2 + "px";
+  dimension = 600 / side - 2 + "px";
   // dimension += "px"
   const newdiv = document.createElement("div");
   container.appendChild(newdiv).id = "newdiv";
@@ -19,3 +23,17 @@ for (i = 1; i <= fill; i++) {
   });
   
 }
+}
+
+populateDivs(side)
+
+btn.addEventListener("click", () =>{
+  side = prompt("How many squares per side");
+  container.innerHTML = "";
+  if (side >= 16 && side <= 100){
+  populateDivs(side);}
+  else{
+    populateDivs(16)
+    alert("Input must be between 16 and 100")
+  }
+})
