@@ -14,4 +14,8 @@ for (i = 1; i <= fill; i++) {
   newdiv.addEventListener("mouseover", (e) => {
     newdiv.style.backgroundColor = "#000000";
   });
+  window.addEventListener('scroll', () => {
+    newdiv.style.backgroundColor = "gray";
+  });
+  
 }
