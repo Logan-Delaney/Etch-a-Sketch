@@ -10,6 +10,13 @@ body .h1 {
   margin-bottom: 10px;
 }
 
+body .erase {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
 #container {
   border: 40px solid darkred;
   display: flex;
@@ -23,9 +30,10 @@ body .h1 {
 #btn {
   max-width: 160px;
   align-self: center;
-  margin-bottom: 20px;
+  
 }
 
 #newdiv {
   background-color: gray;
 }
+
