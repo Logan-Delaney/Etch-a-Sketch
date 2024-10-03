@@ -1,0 +1,30 @@
+body{
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+body .h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    
+}
+
+#container{
+    border: 5px solid black;
+    display: flex;
+    width: 600px;
+    height: 600px;
+    flex-wrap: wrap;
+    align-self: center;
+    justify-self: center;
+}
+
+#btn{
+    max-width: 160px;
+    align-self: center;
+    margin-bottom: 20px;
+}
